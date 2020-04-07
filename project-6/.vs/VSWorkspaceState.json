@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\build",
+    "\\build\\contracts",
+    "\\contracts",
+    "\\contracts\\coffeeaccesscontrol",
+    "\\contracts\\coffeebase",
+    "\\contracts\\coffeecore",
+    "\\migrations",
+    "\\src",
+    "\\src\\js"
+  ],
+  "SelectedNode": "\\contracts\\coffeecore\\Ownable.sol",
+  "PreviewInSolutionExplorer": false
+}
