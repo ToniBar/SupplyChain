@@ -202,7 +202,7 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
   // Call modifier to check if upc has passed previous supply chain stage
   processed(_upc)
   // Call modifier to verify caller of this function
-  verifyCaller(items[_upc].ownerID)
+  verifyCaller(items[_upc].originFarmerID)
   onlyFarmer
   {
     // Update the appropriate fields
@@ -216,7 +216,7 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
   // Call modifier to check if upc has passed previous supply chain stage
   packed(_upc)
   // Call modifier to verify caller of this function
-  verifyCaller(items[_upc].ownerID)
+  verifyCaller(items[_upc].originFarmerID)
   onlyFarmer
   {
     // Update the appropriate fields
@@ -255,8 +255,8 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
     // Call modifier to check if upc has passed previous supply chain stage
     sold(_upc)
     // Call modifier to verify caller of this function
-    verifyCaller(items[_upc].ownerID)
-    //onlyDistributor
+    verifyCaller(items[_upc].distributorID)
+    onlyDistributor
     {
     // Update the appropriate fields
     items[_upc].itemState = State.Shipped;

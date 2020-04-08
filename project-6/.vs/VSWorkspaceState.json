@@ -11,6 +11,6 @@
     "\\src",
     "\\src\\js"
   ],
-  "SelectedNode": "\\contracts\\coffeecore\\Ownable.sol",
+  "SelectedNode": "\\truffle-config.js",
   "PreviewInSolutionExplorer": false
 }
